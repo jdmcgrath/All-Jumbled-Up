@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lemon&display=swap');
+
+body {
+    background: linear-gradient(to right, #e31b6d, #05c2c9);
+    font-family: 'Lemon', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#main {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title {
+    grid-column: 1/4;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 3.4rem;
+    width: 700px;
+    text-align: center;
+    border-top: solid 2px #ff29ff;
+    border-bottom: solid 2px #ff29ff;
+    background: rgba(0,0,0,0.4);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #ff7cff;
+    -webkit-text-stroke-width: 2px;
+    text-shadow: 0px 0px 14px magenta;
+    box-shadow: inset 0px 0px 17px 3px #ff29ff, 0px 6px 17px 0px #ff29ff, 0px -4px 17px 0px #ff29ff;
+    border-radius: 20px;
+    animation-delay: 1s;
+}
+
+.box {
+    display: flex;
+    grid-column: 1/4;
+    margin: 5% 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Baloo Bhaina 2', cursive;
+    background: rgba(128, 0, 128, 0.4);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 10px rgba(255, 0, 255, 0.8);
+    animation-delay: 1s;
+}
+
+.tricky {
+    grid-column: 2;
+    justify-self: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+input.blank {
+    grid-column: 2;
+    color: purple;
+    outline: none;
+    border-radius: 10px;
+    border: solid 2px magenta;
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+}
+
+input.guess:hover, input.hint:hover {
+    cursor: pointer;
+}
+
+input.guess {
+    grid-column: 2;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    background: magenta;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    outline: none;
+    border: solid 2px white;
+    text-align: center;
+    box-shadow: 0px 6px 8px 0px black;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+input.guess:active {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.notifications {
+    width: 90%;
+    justify-self: center;
+    border-radius: 20px;
+    border: solid 1px white;
+    padding: 5px;
+    font-size: 1.3rem;
+    color: white;
+    display: none;
+}
+
+.noti-one {
+    background: red;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.noti-two {
+    background: red;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.noti-three {
+    background: limegreen;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.hint {
+    grid-column: 3;
+    grid-row: 3;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    outline: none;
+    background: green;
+    font-family: 'Baloo Bhaina 2', cursive;
+    border: solid 2px white;
+    font-size: 2rem;
+    line-height: 3.4;
+    justify-self: center;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 6px 8px 0px black;
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.hint:active {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.hint-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    grid-column: 1;
+    grid-row: 1/5;
+    margin: 20px;
+    display: none;
+}
+
+#scrambledWord {
+    color: pink;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.winner_box {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 5% 20%;
+    font-family: 'Baloo Bhaina 2', cursive;
+    background: rgba(128, 0, 128, 0.4);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 10px rgba(255, 0, 255, 0.8);
+    animation-delay: 1s;
+    display: none;}
+
+h2 {
+    text-align: center;
+    color: white;
+    grid-row: 1;
+}
+
+.reset {
+    
+    grid-row: 2;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0 40px;
+    color: white;
+    background: magenta;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    outline: none;
+    border: solid 2px white;
+    text-align: center;
+    box-shadow: 0px 6px 8px 0px black;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    justify-self: center;
+}
+.reset:hover {
+    cursor: pointer;
+}
+.reset:active {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

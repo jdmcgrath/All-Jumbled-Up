@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   	
+    <title> All Scrambled Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <div class="main">
+        <div class="title animated fadeInDown">
+            All Scrambled Up
+        </div>
+        <div class="box animated fadeInUp">
+            <p class="tricky">Guess the Word :</p>
+            <p class="tricky" id="scrambledWord"></p>
+
+            <input type="text" class="blank" id="guess">
+            <input type="submit" class="guess" value="Guess!" id="check" onclick="game.answerChecker()">
+
+            <span class="notifications noti-one animated shake">Please, Write an answer</span>
+            <span class="notifications noti-two animated shake">Oops, wrong answer! Try again</span>
+            <span class="notifications noti-three animated bounceIn">Awesome! That answer was correct</span>
+
+
+            <img src="" class="animated jello hint-img">
+
+            <input type="submit" class="hint" value="Hint?">
+        </div>
+        <div class="winner_box">
+            <h2>Congrats! You guessed all the words correctly. <br>
+                Would you  like to try again?
+            </h2>
+            <button class="reset"><a HREF="javascript:history.go(0)">RESET</a></button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
