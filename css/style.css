@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lemon&display=swap');
 
 body {
-    background: linear-gradient(to right, #e31b6d, #05c2c9);
+    background: #2f2fa2;
     font-family: 'Lemon', cursive;
     margin: 0px;
     padding: 0px;
@@ -23,15 +23,8 @@ body {
     font-size: 3.4rem;
     width: 700px;
     text-align: center;
-    border-top: solid 2px #ff29ff;
-    border-bottom: solid 2px #ff29ff;
-    background: rgba(0,0,0,0.4);
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #ff7cff;
-    -webkit-text-stroke-width: 2px;
-    text-shadow: 0px 0px 14px magenta;
-    box-shadow: inset 0px 0px 17px 3px #ff29ff, 0px 6px 17px 0px #ff29ff, 0px -4px 17px 0px #ff29ff;
+    background: rgba(0,0,0,0.3);
+    color: #f64c72;
     border-radius: 20px;
     animation-delay: 1s;
 }
@@ -43,11 +36,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Baloo Bhaina 2', cursive;
-    background: rgba(128, 0, 128, 0.4);
+    background: rgba(0,0,0,0.3);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: solid 10px rgba(255, 0, 255, 0.8);
     animation-delay: 1s;
 }
 
@@ -64,7 +56,7 @@ input.blank {
     color: purple;
     outline: none;
     border-radius: 10px;
-    border: solid 2px magenta;
+    border: solid 2px  #f64c72;
     font-size: 1.4rem;
     font-family: 'Baloo Bhaina 2', cursive;
     text-align: center;
@@ -72,6 +64,8 @@ input.blank {
 
 input.guess:hover, input.hint:hover {
     cursor: pointer;
+    background-color: rgb(207, 23, 231);
+    transition: .5s ease;
 }
 
 input.guess {
@@ -79,7 +73,7 @@ input.guess {
     margin-bottom: 20px;
     margin-top: 20px;
     color: white;
-    background: magenta;
+    background:  #f64c72;;
     font-family: 'Baloo Bhaina 2', cursive;
     font-size: 1.5rem;
     border-radius: 20px;
@@ -125,6 +119,15 @@ input.guess:active {
     grid-row: 3;
 }
 
+#score {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+}
+
 .hint {
     grid-column: 3;
     grid-row: 3;
@@ -132,9 +135,8 @@ input.guess:active {
     height: 100px;
     border-radius: 100%;
     outline: none;
-    background: green;
+    background: #f64c72;
     font-family: 'Baloo Bhaina 2', cursive;
-    border: solid 2px white;
     font-size: 2rem;
     line-height: 3.4;
     justify-self: center;
@@ -161,7 +163,7 @@ input.guess:active {
 }
 
 #scrambledWord {
-    color: pink;
+    color:  #f64c72;
     font-size: 2rem;
     margin: 0;
 }
@@ -172,11 +174,10 @@ input.guess:active {
     align-items: center;
     margin: 5% 20%;
     font-family: 'Baloo Bhaina 2', cursive;
-    background: rgba(128, 0, 128, 0.4);
+    background: rgba(0,0,0,0.3);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: solid 10px rgba(255, 0, 255, 0.8);
     animation-delay: 1s;
     display: none;}
 
@@ -187,26 +188,24 @@ h2 {
 }
 
 .reset {
-    
-    grid-row: 2;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    display: block;
     padding: 0 40px;
     color: white;
-    background: magenta;
+    background:  #f64c72;
     font-family: 'Baloo Bhaina 2', cursive;
     font-size: 1.5rem;
     border-radius: 20px;
-    outline: none;
     border: solid 2px white;
     text-align: center;
     box-shadow: 0px 6px 8px 0px black;
     transform: scale(1);
     transition: all 0.5s ease;
-    justify-self: center;
+    margin: auto;
 }
 .reset:hover {
     cursor: pointer;
+    background-color: rgb(207, 23, 231);
+    transition: .5s ease;
 }
 .reset:active {
     transform: scale(0.9);
