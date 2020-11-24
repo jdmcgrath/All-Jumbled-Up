@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+body {
+	background: #202036;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	max-width: 90%;
+	padding-top: 5vh;
+	margin: auto;
+	h1 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 50px;
+		color: white;
+		margin: 30px;
+	}
+}
+
+.box {
+	display: grid;
+	margin: 5% 20%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px 100px 50px 100px;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	animation-delay: 1s;
+}
+
+.tricky {
+	grid-column: 2;
+	justify-self: center;
+	color: white;
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+.blank {
+	grid-column: 2;
+	color: black;
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.guess {
+	grid-column: 2;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: white;
+	background: #f64c72;
+	font-size: 1.5rem;
+	border-radius: 20px;
+	outline: none;
+	border: solid 2px white;
+	text-align: center;
+	transition: all 0.5s ease;
+	&:hover {
+		cursor: pointer;
+		background-color: rgb(207, 23, 231);
+		transition: 0.5s ease;
+	}
+}
+
+.notification {
+	align-items: center;
+    justify-content: center;
+	text-align: center;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 1.3rem;
+	display: none;
+	background: #f64c72;
+	color: white;
+	grid-column: 1;
+    grid-row: 2;
+}
+
+#score {
+	grid-column: 3;
+	grid-row: 1;
+	text-align: right;
+	padding: 10px;
+	color: white;
+	font-size: 2em;
+}
+
+.hint-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	grid-column: 1;
+	grid-row: 1/5;
+	margin: 20px;
+	display: none;
+}
+
+#scrambledWord {
+	color: #f64c72;
+	font-size: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.winner_box {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	margin: 5% 20%;
+	background: rgba(0, 0, 0, 0.3);
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	animation-delay: 1s;
+	display: none;
+}
+
+.congrats {
+	text-align: center;
+	color: white;
+	grid-row: 1;
+}
+
+.reset {
+	display: block;
+	padding: 0 40px;
+	color: white;
+	background: #f64c72;
+	font-size: 1.5rem;
+	border-radius: 20px;
+	border: solid 2px white;
+	text-align: center;
+	transition: all 0.5s ease;
+	margin: auto;
+	&:hover {
+		cursor: pointer;
+		background-color: rgb(207, 23, 231);
+		transition: 0.5s ease;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}

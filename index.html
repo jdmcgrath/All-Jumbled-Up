@@ -4,33 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   	
     <title> All Jumbled Up</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="title animated fadeInDown">
-            All Jumbled Up
+        <div class="title">
+            <h1>All Jumbled Up</h1>
         </div>
-        <div class="box animated fadeInUp">
+        <div class="box">
             <p class="tricky">Guess the Word :</p>
             <p class="tricky" id="scrambledWord"></p>
-
             <input type="text" class="blank" id="guess">
             <input type="submit" class="guess" value="Guess!" id="check" onclick="game.answerChecker()">
-
-            <span class="notifications noti-one animated shake">Please, Write an answer</span>
-            <span class="notifications noti-two animated shake">Oops, wrong answer! Try again</span>
-            <span class="notifications noti-three animated bounceIn">Awesome! That answer was correct</span>
+            <span class="notification noti-one">Please write an answer</span>
+            <span class="notification noti-two">Oops, wrong answer! Try again</span>
+            <span class="notification noti-three">Awesome! That answer was correct</span>
             <span id="score"></span>
-
-
-            <img src="" class="animated jello hint-img">
-
-            <input type="submit" class="hint" value="Hint?">
         </div>
         <div class="winner_box">
-            <h2>Congrats! You guessed all the words correctly. <br>
+            <h2 class="congrats">Congrats! You guessed all the words correctly. <br>
                 Would you  like to try again?
             </h2>
             <button class="reset"><a HREF="javascript:history.go(0)">RESET</a></button>
