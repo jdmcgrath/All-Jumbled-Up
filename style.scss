@@ -33,6 +33,7 @@ body {
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: 20px;
 	animation-delay: 1s;
+	padding: 5vh;
 }
 
 .tricky {
@@ -55,29 +56,25 @@ body {
 
 .guess {
 	grid-column: 2;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	width: auto;
+	margin: 20px auto;
+	padding: 0 20px;
 	color: white;
-	background: #f64c72;
+	background: #5cb8c7;
 	font-size: 1.5rem;
-	border-radius: 20px;
+	border-radius: 10px;
 	outline: none;
-	border: solid 2px white;
+	border: none;
 	text-align: center;
-	transition: all 0.5s ease;
-	&:hover {
-		cursor: pointer;
-		background-color: rgb(207, 23, 231);
-		transition: 0.5s ease;
-	}
 }
 
 .notification {
 	align-items: center;
+	width: auto;
+	padding: 0 20px;
     justify-content: center;
 	text-align: center;
 	border-radius: 20px;
-	padding: 10px;
 	font-size: 1.3rem;
 	display: none;
 	background: #f64c72;
@@ -124,6 +121,7 @@ body {
 	border-radius: 20px;
 	animation-delay: 1s;
 	display: none;
+	padding: 5vh;
 }
 
 .congrats {
@@ -134,20 +132,17 @@ body {
 
 .reset {
 	display: block;
+	width: auto;
+	margin: 20px auto;
 	padding: 0 40px;
 	color: white;
-	background: #f64c72;
+	background:#5cb8c7;
 	font-size: 1.5rem;
 	border-radius: 20px;
-	border: solid 2px white;
 	text-align: center;
 	transition: all 0.5s ease;
-	margin: auto;
-	&:hover {
-		cursor: pointer;
-		background-color: rgb(207, 23, 231);
-		transition: 0.5s ease;
-	}
+	outline: none;
+	border: none;
 }
 
 a {

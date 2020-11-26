@@ -46,6 +46,7 @@ body {
   border-radius: 20px;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+  padding: 5vh;
 }
 
 .tricky {
@@ -72,36 +73,29 @@ body {
 .guess {
   -ms-grid-column: 2;
   grid-column: 2;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  width: auto;
+  margin: 20px auto;
+  padding: 0 20px;
   color: white;
-  background: #f64c72;
+  background: #5cb8c7;
   font-size: 1.5rem;
-  border-radius: 20px;
+  border-radius: 10px;
   outline: none;
-  border: solid 2px white;
+  border: none;
   text-align: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.guess:hover {
-  cursor: pointer;
-  background-color: #cf17e7;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
 }
 
 .notification {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: auto;
+  padding: 0 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
-  padding: 10px;
   font-size: 1.3rem;
   display: none;
   background: #f64c72;
@@ -169,6 +163,7 @@ body {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   display: none;
+  padding: 5vh;
 }
 
 .congrats {
@@ -180,23 +175,18 @@ body {
 
 .reset {
   display: block;
+  width: auto;
+  margin: 20px auto;
   padding: 0 40px;
   color: white;
-  background: #f64c72;
+  background: #5cb8c7;
   font-size: 1.5rem;
   border-radius: 20px;
-  border: solid 2px white;
   text-align: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  margin: auto;
-}
-
-.reset:hover {
-  cursor: pointer;
-  background-color: #cf17e7;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  outline: none;
+  border: none;
 }
 
 a {
